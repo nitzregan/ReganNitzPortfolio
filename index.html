@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- fix line spacing in about and look into rule of thirds and make pic bigger -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display:400,900,900i&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e3428bc011.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#f5f5f3">
+    <link rel="stylesheet" type="text/css" href="portfoliostyle.css">
+    <title>Regan Nitz</title>
+</head>
+
+<body>
+
+    <!-- navbar here, except not a navbar lets just make this a cute little drop menu moment, but wit a hamburger, v minimal -->
+    <!-- <div class="dropdown"> -->
+
+    <div id="mySidenav" class="sidenav">
+        <a href="#aboutme" id="aboutmenav">About</a>
+        <a href="#portfolio" id="portfolionav">Portfolio</a>
+        <a href="#contact" id="contactnav">Contact</a>
+        <a href="assets/ReganNitz-Resume-11012019.pdf" id="resumelinknav">Resume</a>
+    </div>
+
+    <div class="dropdown" style="display: none;">
+        <button class="dropbtn dropIt"><i class="fas fa-bars dropIt"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#aboutme">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+            <a href="assets/ReganNitz-Resume-11012019.pdf">Resume</a>
+        </div>
+    </div>
+
+    <div class="scrollTop">
+        <a href="#top"><i class="fas fa-chevron-up"></i></a>
+    </div>
+
+    <!-- <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown link
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#aboutme">About</a>
+            <a class="dropdown-item" href="#portfolio">Portfolio</a>
+            <a class="dropdown-item" href="#contact">Contact</a>
+        </div>
+    </div> -->
+
+    <div class="site-container">
+        <div class="landing-page" id="top">
+            <!-- big image (duotone? maybe?) with cute text -->
+            <!-- <div class="landingPageWords"> -->
+            <h1 class="landingPageTitle">Regan Nitz</h1>
+            <h3 class="landingPageSubtitle">Junior Web Developer</h3>
+            <!-- </div> -->
+        </div>
+
+
+
+        <div class="main-site-content">
+
+
+            <div class="about-me-header" id="aboutme">
+                <!-- big image (duotone? maybe?) with cute text -->
+                <!-- fixed -->
+                <!-- <p>content</p> -->
+                <h1 class="headerTitle">About Me</h1>
+            </div>
+            <div class="about-me-page">
+
+
+                <div class="about-bio">
+                    <div class="about-me-content">
+                        <!-- be able to scroll through this stuff while the header remains fixed -->
+                        <div class='about-img'>
+                            <img src="assets/HeadshotReganNitz.jpg" id="me" alt="me">
+                            <!-- <div class="contact-btn">
+                            <a href="#contact"><button type="button" class="btn btn-outline-primary"
+                                    aria-pressed="true">Contact
+                                    Me</button></a> -->
+                        </div>
+                    </div>
+
+                    <h2 class="title">Hello!</h2>
+                    <p> My name is Regan and I'm a web developer. I'm a lover of coffee, true crime documentaries,
+                        Chicago sports, and coding. I found my passion for coding while I was in high school and I used
+                        the little skill I had at the time to help my friends design their blogs. Fast forward a few
+                        years to when I found the 1150 Academy and joined their .Net Development class to hone my skill
+                        and turn my hobby into a career.
+                    
+                        <br>
+                        I've been a creator all my life. From
+                        embroidery to pottery to painting and everything in
+                        between, I have always strived to create beautiful things. I love coding because it allows me
+                        to keep creating beautiful, but highly functional products with real-world use. My goal in my
+                        work is to use the design-centric part of my mind in conjunction with my skill for developing to
+                        output something easy to use but also aesthetically pleasing to its users. </p>
+                    <!-- Run this through Grammarly -->
+                    <div class="signature-drawing">
+                        <img src="assets/signature.png" alt="signature" id="signature">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-page">
+            <div class="portfolio-header" id="portfolio">
+                <!-- fixed -->
+                <h1 class="headerTitle">Portfolio</h1>
+
+            </div>
+
+            <div class="portfolio-content">
+                <!-- be able to scroll through this stuff while the header remains fixed -->
+                <!-- cards here most likely, steal them from bootstrap with no remorse -->
+
+                <!-- <i class="fas fa-file-code"></i> -->
+
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btnAccordion collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="fab fa-css3 projectIconCode"></i>
+                                    <h5 class="card-title">Static Store</h5>
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                A mock storefront wesbsite. This is a single page site, built with simple HTML and CSS.
+                                <p class="projectLink" style="text-align: right;">
+                                    <a href="https://github.com/nitzregan/StaticStore" alt="Static Store"><i
+                                            class="fas fa-file-code"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btnAccordion collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="fas fa-terminal projectIconCode"></i>
+                                    <h5 class="card-title">Gold Bage Project</h5>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                This project was created using C#. It is a series of console applications, each
+                                completeing a different objective.
+                                <p class="projectLink" style="text-align: right;">
+                                    <a href="https://github.com/nitzregan/ConsoleAppChallenges"
+                                        alt="Gold Badge Project"><i class="fas fa-file-code"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btnAccordion collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="fas fa-code projectIconCode"></i>
+                                    <h5 class="card-title">ElevenNote Web.MVC</h5>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                I genuinely don't know what this was
+                                <p class="projectLink" style="text-align: right;">
+                                    <a href="" alt=""><i class="fas fa-file-code"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btnAccordion collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <h5 class="card-title"><i class="fas fa-code projectIconCode"></i> Blue Badge
+                                        Project</h5>
+
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                I genuinely don't know what this was
+                                <p class="projectLink" style="text-align: right;">
+                                    <a href="" alt=""><i class="fas fa-file-code"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btnAccordion collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <i class="fab fa-css3 projectIconCode"></i>
+                                    <h5 class="card-title">CSS Creature</h5>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                This was an excercise in learning CSS. I made a rendering of Kirby
+                                using HTML and CSS only
+                                <p class="projectLink" style="text-align: right;">
+                                    <a href="" alt=""><i class="fas fa-file-code"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="card-columns">
+
+                    <div class="card">
+                        <div>
+                             <img src="assets/StaticStore_screenshot.PNG" class="card-img-left" alt="..."> 
+                            <i class="fab fa-css3 projectIconCode"></i>
+                        </div>
+                        <div class="card-horizontal">
+                            <h5 class="card-title">Static Store</h5>
+                             <p class="card-text">A mock storefront wesbsite. This is a single page site, built with simple HTML and CSS.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <i class="fab fa-css3 projectIconCode"></i>
+                            <img src="assets/CSSCreature_screenshot.PNG" class="card-img-left" alt="...">
+                        </div>
+                        <div class="card-horizontal">
+                            <h5 class="card-title">CSS Creature</h5>
+                            <p class="card-text">This was an excercise in learning CSS. I made a rendering of Kirby
+                                using HTML and CSS only.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <i class="fas fa-terminal projectIconCode"></i>
+                            <img src="assets/GoldBadgeChallenge_screenshot.PNG" class="card-img-left" alt="...">
+                        </div>
+                        <div class="card-horizontal">
+                            <h5 class="card-title">Gold Bage Project</h5>
+                            <p class="card-text">This project was created using C#. It is a series of console
+                                applications, each completeing a different objective.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="softenImgPink">
+                            <i class="fas fa-code projectIconCode"></i>
+
+                            <img src="..." class="card-img-left" alt="...">
+                        </div>
+                        <div class="card-horizontal">
+                            <h5 class="card-title">ElevenNote Web.MVC</h5>
+                            <p class="card-text"> I genuinely don't know what this was</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="softenImgTeal">
+                           <i class="fas fa-code projectIconCode"></i>
+
+                            <img src="..." class="card-img-left" alt="...">
+                        </div>
+                        <div class="card-horizontal">
+                            <h5 class="card-title">Blue Badge Project</h5>
+                            <p class="card-text">TProject summary.</p>
+                        </div>
+                    </div>
+
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-me-page">
+        <div class="contact-me-content" id="contact">
+            <div class="container contactContainer">
+                <h1 style="text-align: center;" class="title">Get in Touch!</h1>
+                <p style="text-align: center;">Need a website or want to collaborate? Just let me know below, I would
+                    love to hear from you!
+                </p>
+
+                <div class="container form">
+                    <form method="POST" action="https://formspree.io/regannitz@gmail.com">
+                        <div id="name-email" style="align-content: center;">
+                            <input type="text" name="name" placeholder="*Name" required>
+
+                            <input type="email" name="email" placeholder="*Email" required>
+                        </div>
+
+                        <div id="message">
+                            <textarea name="message" placeholder="Message"></textarea>
+                        </div>
+
+                        <div id="send-btn">
+                            <button class="btn btn-outline-primary" type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- sticky scroll back to the top button -->
+
+    <!-- nice footer, not seen until at the bottom, make it pretty -->
+
+    <div class="container, footer">
+        <footer>
+            <div class="social-btns">
+                <a href="https://codepen.io/nitzregan" alt="Codepen"><i class="fab fa-codepen"></i></a>
+                <a href="https://github.com/nitzregan" alt="Github"><i class="fab fa-github"></i></a>
+                <a href="assets/ReganNitz-Resume-11012019.pdf" alt="Resume"><i class="far fa-file"></i></a>
+                <a href="https://www.linkedin.com/in/regan-nitz-41aa77112/" alt="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+            <br>
+            <p>2019 &copy; Regan Nitz</p>
+        </footer>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="portfoliostyle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,651 @@
+/* full site formatting (header, bg color/image, font, footer, top button) */
+body{
+    background: #F5F5F3;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #F5F5F3;
+    
+}
+
+h2{
+    font-family: 'Playfair Display', serif;
+    color: #71A5AF;
+}
+
+.scrollTop{
+    position: fixed;
+    z-index: 15;
+    bottom: 0;
+    right: 0;
+    color: rgba(175, 201, 207, 0.2);
+}
+
+#mySidenav a {
+    position: fixed; /* Position them relative to the browser window */
+    z-index: 10;
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px 15px 15px 15px; /* 15px padding */
+    padding-right: 10px;
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 15px; /* Increase font size */
+    color: #F5F5F3; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  }
+  
+  #mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+  }
+  
+  #aboutmenav {
+    top: 20px;
+    background-color: #AFC9CF;
+  }
+  
+  #portfolionav {
+    top: 80px;
+    background-color: #71A5AF;
+  }
+  
+  #contactnav {
+    top: 140px;
+    background-color: #DB9393;
+  }
+  
+  #resumelinknav {
+    top: 200px;
+    background-color: #CD8973;
+  }
+
+
+/* .dropdown{
+    position: fixed;
+    z-index: 10;
+    color: #F5F5F3;
+    background: #71A5AF;
+} */
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: rgb(175, 201, 207, 0.8);
+    color: #F5F5F3;
+    padding: 0px;
+    font-size: 1vw;
+    border: transparent;
+    border-radius: 3px 3px 3px 3px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 10;
+    margin-top: 3px;
+    margin-left: 3px;
+  }
+  
+  /* Dropdown button on hover & focus */
+  /* .dropbtn:hover, .dropbtn:focus {
+    background-color: #71A5AF;
+  } */
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: fixed;
+    display: inline-block;
+    z-index: 10;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color:rgb(175, 201, 207);
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(175,201,207,0.2);
+    z-index: 10;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 3px;
+    margin-left: 3px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #F5F5F3;
+    padding: 12px 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown i{
+      color:#F5F5F3;
+  }
+  
+  /* Change color of dropdown links on hover */
+  /* .dropdown-content a:hover {background-color: #ddd} */
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+.btn{
+    color:#DB9393;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.btn-outline-primary{
+    border-color:#DB9393;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus,.btn-outline-primary:active, .btn-outline-primary:visited, .btn:focus, .btn-outline-primary:not(:disabled):not(.disabled):active{
+    border-color:#DB9393;
+    box-shadow: #DB9393;
+    background-color: #DB9393;
+    color: #F5F5F3;
+}
+
+.btn:hover{
+    color:#F5F5F3;
+    font-family: 'Playfair Display', serif
+}
+
+.site-container{
+    display: grid;
+
+}
+
+.main-site-content{
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* landing page formatting */
+.landing-page{
+    background: url(assets/LandingPageBackground.jpg);
+    background-position: left bottom;
+    width:100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #71A5AF; */
+}
+
+/* .landingPageWords{
+    align-items: center;
+} */
+
+.landingPageTitle{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 15vw;
+    color: #DB9393;
+    align-self: center;
+}
+
+.landingPageSubtitle{
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    font-size: 4vw;
+    color: #DB9393;
+    align-self: center;
+}
+
+/* about me formatting */
+.about-me-page{
+    display: flex;
+    width: 50%;
+    padding: 2em;
+}
+.about-me-header{
+    background: url(assets/AboutMeBackground.jpg);
+    width: 50%;
+    align-items: flex-start;
+    height: 100vh;
+    background-size: cover;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+.about-me-header .headerTitle{
+    align-self: center;
+}
+
+.about-me-content{
+   /* width: 50%; */
+   align-items: flex-end;
+   padding-right: 1em;
+   /* height: 400px; */
+   float: left;
+   /* margin-right: 2em; */
+}
+
+#me{
+    /* margin-left: 2em; */
+    display: flex;
+    width:15vw;
+    border-radius: 5px;
+    /* margin: auto auto; */
+    /* margin-top: 1em; */
+}
+
+.about-bio{
+    text-align: justify;
+    margin-right:2em;
+    line-height: 200%;
+}
+
+#signature{
+    height: 100px;
+    float: right;
+}
+
+
+
+/* portfolio formatting */
+.portfolio-page{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.portfolio-header{
+    background: url(assets/PortfolioBackground.jpg);
+    width: 50%;
+    height: 100vh;
+    background-size: cover;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-header .headerTitle{
+    align-self: center;
+
+}
+
+.portfolio-content{
+    width: 50%;
+    display: flex;
+    padding: 2em;
+    justify-content: center;
+
+}
+
+/* cards formatting */
+.accordion{
+    width: 80%;
+    border: transparent;
+
+}
+
+.card-title{
+    font-family: 'Playfair Display', serif;
+    color: #F5F5F3;
+
+}
+
+.projectIconCode{
+    width: 100%;
+    height: 100%;
+    color: #F5F5F3;
+    font-size: 5vw;
+}
+
+.projectIconCode:hover{
+    color: #F5F5F3;
+}
+
+.btnAccordion{
+    width: 100%;
+}
+
+.btnAccordion:hover{
+    color: #F5F5F3;
+    /* background: #F5F5F3; */
+    text-decoration: none;
+}
+
+.btnAccordion:focus{
+    color: #F5F5F3;
+    /* background: #F5F5F3; */
+    background: #71A5AF;
+    background: #AFC9CF;
+
+    border: none;
+    text-decoration: none;
+}
+
+.btn.btnAccordion:active{
+    color: #F5F5F3;
+    /* background: #F5F5F3; */
+    background: #71A5AF;
+
+    border: none;
+    text-decoration: none;
+}
+
+.card{
+    background: #AFC9CF;
+    border: transparent;
+    border-radius: 0%;
+}
+
+.card-header{
+    color: #F5F5F3;
+    padding:0;
+}
+
+.card-header:hover{
+    /* color: #71A5AF; */
+    background: #71A5AF;
+    text-decoration: none;
+    color: #F5F5F3;
+
+}
+
+.card-header:focus{
+    /* color: #71A5AF; */
+    background: #71A5AF;
+    border: none;
+    text-decoration: none;
+    color: #F5F5F3;
+
+}
+
+.card-body{
+    background: #F5F5F3;
+}
+
+.fa-file-code{
+    padding:0;
+    font-size: 2em;
+}
+
+.projectLink{
+    margin:0;
+}
+
+/* .card{
+    max-width: 80%;
+    margin: 1em;
+    display: flex !important;
+    flex-direction: row;
+    height: 18vw;
+    border-radius: 5px;
+    background: transparent;
+    border: transparent;
+    border-right: 2px solid #AFC9CF; 
+    border-color: #AFC9CF;
+}
+
+.card-columns{
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
+
+/* .softenImgTeal{
+    background-color: rgb(113, 165, 175, 0.6);
+    width: 50%;
+    border-radius: 3px;
+}
+
+.softenImgPink{
+    background-color: rgb(219, 147, 147, 0.5);
+    width: 50%;
+    border-radius: 3px;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    opacity: 0.4;
+} */
+
+/* .card-horizontal{
+    padding: 1em;
+    overflow: scroll;
+    width: 50%;
+} */
+
+
+/* contact formatting */
+.contact-me-page{
+    background: url(assets/ContactMeBackground.jpg);
+    background-position: right bottom;
+    width:100%;
+    height: 65vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 50vh;
+    width: 75%;
+    background:rgb(175, 201, 207, 0.8);
+    border-radius: 5px;
+    position: relative;
+    z-index: 10;
+}
+
+
+#contact{
+    /* background-color:#E3E3E0; */
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+form{
+    font-family: 'Playfair Display', serif;
+    align-self: center;
+}
+
+.contactContainer .title{
+    align-self: center;
+}
+
+.contactContainer .p{
+    align-self: center;
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+input{
+    background: #F5F5F3;
+    border: transparent;
+    border-radius: 2px;
+    padding: 1px;
+    margin: 2px;
+}
+
+textarea{
+    background: #F5F5F3;
+    border: transparent;
+    border-radius: 2px;
+    padding: 1px;
+}
+
+#name-email{
+    align-items: flex-start;
+    justify-content: space-between;
+    align-self: center;
+}
+
+#message textarea{
+    align-self: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: .5em;
+}
+
+#send-btn{
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      background: #AFC9CF;
+      height: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #71A5AF;
+  }
+
+i{
+    color: #AFC9CF;
+    font-size: 4vw;
+    padding: .5em;
+}
+
+.social-btns i{
+    color: #AFC9CF;
+    font-size: 3vw;
+    padding: 10px;
+}
+
+i:hover{
+    color:#71A5AF;
+}
+
+/* .social-btns a{
+    padding: 5px;
+} */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #DB9393;
+    color: #F5F5F3;
+    font-size: 1vw;
+    margin-bottom: 0;
+    padding: 2em;
+    padding-bottom: 1em;
+    bottom: 0;
+    height: 10em;
+}
+
+footer p{
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 700px){
+    .main-site-content{
+      flex-direction: column;
+    }
+    .about-me-header{
+        width: 100%;
+        position: static;
+    }
+    .about-me-page{
+        width: 100%;
+    }
+
+    #me{
+        width: 45vw;
+    }
+
+    .portfolio-content{
+        flex-direction: column;
+        width: 100%;
+    }
+    .portfolio-header{
+        width: 100%;
+        position: relative;
+    }
+    .portfolio-page{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .accordion{
+        width:100%;
+    }
+
+    .fa-file-code{
+        font-size: 1.5em;
+    }
+
+    /* .card{
+        width: 100%;
+        margin: 5px;
+        height: 35vw;
+    }
+    .card-horizontal{
+        overflow: scroll;
+    }
+    .card-columns .card {
+        display: inline-block;
+        display: flex !important;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .card-columns{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    } */
+
+    .dropdown{
+        display: block !important;
+    }
+
+    .sidenav{
+        display: none;
+    }
+
+    #name-email input{
+        width: 100%;
+    }
+
+    i {
+        font-size: 6vw;
+    }
+
+    footer{
+        font-size: 2vw;
+    }
+}
