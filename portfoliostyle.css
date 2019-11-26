@@ -42,7 +42,8 @@ h2{
     font-size: 15px; /* Increase font size */
     color: #F5F5F3; /* White text color */
     border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
-  }
+    box-shadow: 2px 2px 4px #B4B4B4;
+}
   
   #mySidenav a:hover {
     left: 0; /* On mouse-over, make the elements appear as they should */
@@ -484,6 +485,7 @@ input{
     border-radius: 2px;
     padding: 1px;
     margin: 2px;
+    padding-left: 3px;
 }
 
 textarea{
@@ -491,6 +493,7 @@ textarea{
     border: transparent;
     border-radius: 2px;
     padding: 1px;
+    padding-left: 3px;
 }
 
 #name-email{
