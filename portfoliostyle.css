@@ -48,6 +48,11 @@ h2{
   #mySidenav a:hover {
     left: 0; /* On mouse-over, make the elements appear as they should */
   }
+/* 
+  #mySidenav img {
+      position: relative;
+      width: 10px;
+  } */
   
   #aboutmenav {
     top: 20px;
